@@ -80,6 +80,8 @@ open class ScatterChartRenderer: LineScatterCandleRadarRenderer
                 point.y = CGFloat(e.y * phaseY)
                 point = point.applying(valueToPixelMatrix)
                 
+                /*
+                
                 if !viewPortHandler.isInBoundsRight(point.x)
                 {
                     break
@@ -90,6 +92,8 @@ open class ScatterChartRenderer: LineScatterCandleRadarRenderer
                 {
                     continue
                 }
+ 
+                */
                 
                 renderer.renderShape(context: context, dataSet: dataSet, viewPortHandler: viewPortHandler, point: point, color: dataSet.color(atIndex: j))
             }
